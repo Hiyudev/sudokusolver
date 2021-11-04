@@ -1,0 +1,6 @@
+fastapi==0.70.0
+keras==2.6.0
+numpy==1.19.3
+opencv_python==4.5.3.56
+pydantic==1.8.2
+tensorflow==2.6.0
