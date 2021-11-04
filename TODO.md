@@ -1,0 +1,2 @@
+- [Server] Host Heroku
+- [Client] Host Vercel
