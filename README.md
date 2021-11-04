@@ -8,8 +8,7 @@ Sudoku solver is an online web tool to help people on solving their sudoku.
 
 <p align="center">
  <a href="#features">Features</a> •
- <a href="#technology">Technology</a> •
- <a href="https://sudokusolver.vercel.app/">Website Live Preview</a>
+ <a href="#technology">Technology</a>
 </p>
 
 ---
