@@ -6,7 +6,7 @@ export function imageInput(base64) {
       body: JSON.stringify({code: base64}),
     };
 
-    fetch('http://127.0.0.1:8000/image', options)
+    fetch('https://sudoku-solver-fast.herokuapp.com/image', options)
       .then(async (response) => {
         const content = await response.json();
         if(content.board) {
@@ -28,7 +28,7 @@ export function solveInput(grid) {
       body: JSON.stringify({table: grid}),
     };
 
-    fetch('http://127.0.0.1:8000/solve', options)
+    fetch('https://sudoku-solver-fast.herokuapp.com/solve', options)
       .then(async (response) => {
         const content = await response.json();
         if(content.board) {
