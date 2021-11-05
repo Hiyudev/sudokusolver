@@ -7,7 +7,6 @@ export default function App({Component, pageProps}) {
   return (
     <>
       <Head>
-        {/* TODO: Add image for preview */}
         <meta charSet="utf-8" />
         <title>Sudoku Solver</title>
         <meta
@@ -18,7 +17,7 @@ export default function App({Component, pageProps}) {
         <meta name="description" content="Web tool to solve your sudoku !" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://sudokusolver.vercel.app/" />
         <meta property="og:title" content="Sudoku Solver" />
         <meta
           property="og:description"
@@ -26,11 +25,11 @@ export default function App({Component, pageProps}) {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://sudokusolver.vercel.app/splash.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://sudokusolver.vercel.app/" />
         <meta property="twitter:title" content="Sudoku Solver" />
         <meta
           property="twitter:description"
@@ -38,7 +37,7 @@ export default function App({Component, pageProps}) {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://sudokusolver.vercel.app/splash.png"
         />
 
         <meta name="theme-color" content="#000000" />
