@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origins = [
-    "https://sudokusolver.vercel.app/",
+    "https://sudokusolver.vercel.app",
 ]
 
 app.add_middleware(
