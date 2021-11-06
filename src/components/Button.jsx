@@ -1,7 +1,7 @@
 import device from "@styles/device";
 import styled from "styled-components";
 
-const Button = styled.button`
+export const Button = styled.button`
   border-radius: 1rem;
   padding: 1rem;
   display: flex;
@@ -28,17 +28,15 @@ const Button = styled.button`
   }
 `
 
-const PrimaryButton = styled(Button)`
+export const PrimaryButton = styled(Button)`
   color: #fff;
   background-color: ${({ theme }) => theme.colors.primary};
 `
 
-const CorrectButton = styled(Button)`
+export const CorrectButton = styled(Button)`
   background-color: ${({ theme }) => theme.colors.correct};
 `
 
-const ErrorButton = styled(Button)`
+export const ErrorButton = styled(Button)`
   background-color: ${({ theme }) => theme.colors.error};
 `
-
-export { Button, PrimaryButton, CorrectButton, ErrorButton };

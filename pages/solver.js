@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import {useDropzone} from 'react-dropzone';
 import {imageInput, solveInput} from 'src/services/api';
-import {Fragment, useCallback, useRef, useState} from 'react';
+import {useCallback, useRef, useState} from 'react';
 
 import {Button, CorrectButton} from '@components/Button';
 import Model from '@components/Model';
@@ -30,6 +30,19 @@ const Logo = () => {
   );
 };
 
+const plusIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="16"
+    height="16"
+    fill="currentColor"
+    class="bi bi-plus"
+    viewBox="0 0 16 16"
+  >
+    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+  </svg>
+);
+
 const Buttons = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -42,7 +55,6 @@ const Body = styled.div`
   color: ${({theme}) => theme.main.color};
   min-height: 100vh;
 `;
-
 
 export default function Solver() {
   const initialState = [
@@ -193,27 +205,21 @@ export default function Solver() {
       <Table.Header>
         <Logo />
 
-        <Fragment>
-          {solved.length === 0 ? (
-            <Buttons>
-              <Button onClick={resetSelect}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                </svg>
-              </Button>
-              <CorrectButton disabled={request} onClick={solveGrid}>
-                Solve
-              </CorrectButton>
-              <Button disabled={request} onClick={resetGrid}>
-                Reset
-              </Button>
-            </Buttons>
-          ) : (
-            <Buttons>
-              <Button onClick={resetSolved}>Back</Button>
-            </Buttons>
-          )}
-        </Fragment>
+        {solved.length === 0 ? (
+          <Buttons>
+            <Button onClick={resetSelect}>{plusIcon}</Button>
+            <CorrectButton disabled={request} onClick={solveGrid}>
+              Solve
+            </CorrectButton>
+            <Button disabled={request} onClick={resetGrid}>
+              Reset
+            </Button>
+          </Buttons>
+        ) : (
+          <Buttons>
+            <Button onClick={resetSolved}>Back</Button>
+          </Buttons>
+        )}
       </Table.Header>
 
       <Table.Grid>
