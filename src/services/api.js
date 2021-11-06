@@ -7,7 +7,7 @@ export function imageInput(base64) {
       method: 'POST',
       headers: fetchheaders,
       mode: 'cors',
-      body: {code: base64},
+      body: JSON.stringify({code: base64}),
     };
 
     fetch('https://sudoku-solver-fast.herokuapp.com/image', options).then(
@@ -34,7 +34,7 @@ export function solveInput(grid) {
       method: 'POST',
       headers: fetchheaders,
       mode: 'cors',
-      body: {table: grid},
+      body: JSON.stringify({table: grid}),
     };
 
     fetch('https://sudoku-solver-fast.herokuapp.com/solve', options).then(
