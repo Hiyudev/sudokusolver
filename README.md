@@ -8,7 +8,8 @@ Sudoku solver is an online web tool to help people on solving their sudoku.
 
 <p align="center">
  <a href="#features">Features</a> •
- <a href="#technology">Technology</a>
+ <a href="#technology">Technology</a> •
+ <a href="https://sudokusolver.vercel.app/">Visit the website</a>
 </p>
 
 ---
@@ -38,4 +39,3 @@ Sudoku solver is an online web tool to help people on solving their sudoku.
   <img alt="OpenCV" src="https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white">
   <img alt="Tensorflow" src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white">
 </p>
-
