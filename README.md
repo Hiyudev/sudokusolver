@@ -5,6 +5,8 @@
 Sudoku solver is an online web tool to help people on solving their sudoku.
 
 ---
+> ⚠️ This project no longer solves sudoku due to backend don't work properly.
+---
 
 <p align="center">
  <a href="#features">Features</a> •
